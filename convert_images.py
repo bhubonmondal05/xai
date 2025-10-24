@@ -1,13 +1,13 @@
-# Convert images from any extr
+# Convert images from any extension
 import os
 from PIL import Image
 
 # ----- CONFIG -----
-root_dir = "train"                     # change if needed
+root_dir = "train"              
 folders_to_convert = ["NORMAL", "PNEUMONIA", "TUBERCULOSIS"]
 # treat these as source formats (will be converted)
 source_exts = ('.png', '.jpeg', '.bmp', '.tiff', '.jfif', '.webp', '.gif', '.jpe')
-quality = 95                             # JPEG save quality
+quality = 100                           
 overwrite = False                        # True -> replace existing .jpg; False -> skip if .jpg exists
 keep_original = False                    # True -> keep original file (don't delete); False -> remove it after conversion
 # ------------------
@@ -47,8 +47,6 @@ for folder in folders_to_convert:
         try:
             # open image and convert
             with Image.open(src_path) as img:
-                # If the file is already JPEG in content (format == 'JPEG') and the extension is .jpeg/.jfif,
-                # we can safely rename/move the file instead of re-encoding (faster, preserves metadata).
                 if img.format == "JPEG" and ext_lower in ('.jpeg', '.jfif', '.jpe'):
                     # close then move/replace
                     img.close()

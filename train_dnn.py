@@ -1,3 +1,5 @@
+
+
 # import pandas as pd
 # from sklearn.model_selection import train_test_split
 # from sklearn.preprocessing import StandardScaler, LabelEncoder
@@ -96,7 +98,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import classification_report, accuracy_score
-import joblib # To save the trained model
+import joblib 
 
 # --- Configuration ---
 FEATURE_CSV_PATH = 'save_features.csv'
@@ -117,7 +119,7 @@ def train_and_evaluate_dnn(csv_path):
         return
 
     X = df[feature_columns]
-    y = df['label'] # The disease class (e.g., 'COVID19', 'NORMAL')
+    y = df['label']
     
     # 2. Preprocessing: Encoding Labels
     print(f"Unique classes: {y.unique()}")

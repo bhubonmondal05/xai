@@ -9,11 +9,8 @@ import joblib
 import os
 import base64
 from io import BytesIO
-
-# Flask imports
 from flask import Flask, request, jsonify
 
-# --- Configuration (MUST MATCH main.py and grad_cam.py) ---
 MODEL_WEIGHTS = models.DenseNet121_Weights.DEFAULT 
 TARGET_LAYER_NAME = 'features.norm5' 
 
@@ -25,8 +22,7 @@ dnn_model = None # Scikit-learn classifier
 scaler = None # Scikit-learn scaler
 label_encoder = None # Scikit-learn label encoder
 
-# --- GradCam Class (Copied from grad_cam.py) ---
-# NOTE: The manual forward pass fix is implemented here.
+
 class GradCam:
     def __init__(self, model, target_layer_name):
         self.model = model
@@ -83,7 +79,7 @@ class GradCam:
 # --- Utility Functions ---
 
 def load_models():
-    """Load models once at server startup."""
+    """Load models."""
     global model, dnn_model, scaler, label_encoder
     
     # 1. Load PyTorch DenseNet Model
@@ -134,8 +130,9 @@ def process_and_encode_heatmap(img_path, heatmap, prediction_label):
     
     return base64_encoded
 
-# --- Flask API Endpoint ---
 
+
+# --- Flask API Endpoint ---
 @app.route('/api/predict', methods=['POST'])
 def predict_and_explain():
     if 'image' not in request.files:
@@ -204,15 +201,12 @@ def predict_and_explain():
         if os.path.exists(temp_path):
             os.remove(temp_path)
 
-# --- Server Start ---
+
 if __name__ == '__main__':
-    # Load models before running the app
     try:
         load_models()
         print("\n--- Flask Server Starting ---")
-        # Run on a common port (5000) accessible externally
         app.run(host='0.0.0.0', port=5001, debug=True, use_reloader=False) 
-        # use_reloader=False prevents the model from loading twice
     except RuntimeError as e:
         print(f"\nFATAL ERROR: Could not start server. {e}")
         print("Please run train_dnn.py to generate the required model files.")
