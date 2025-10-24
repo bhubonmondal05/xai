@@ -1,7 +1,7 @@
 # <center>Explainable AI for Chest X-Ray Analysis</center>
 #### This is the history to track our progress.
 
-1. Findout dataset of xray and save in dataset folder.
+1. Findout xray dataset for the required project. [Dataset Link](https://www.kaggle.com/datasets/jtiptj/chest-xray-pneumoniacovid19tuberculosis)
    <br>
    <center>
        <img src="sample/cov.jpg" style="width:120px; height:120px; object-fit:cover;">
