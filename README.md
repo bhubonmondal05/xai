@@ -9,6 +9,7 @@
        <img src="sample/pnu.jpeg" style="width:120px; height:120px; object-fit:cover;">
        <img src="sample/tub.png" style="width:120px; height:120px; object-fit:cover;">
    </center>
+   ### Covid19      Normal      Pneumonia    Tuberculosis
 3. Convert all images into same extension (jpg).
 4. feature extraction using DenseNet saved in *save_features.csv*.
 5. apply Dense Neural Network (DNN) classifier and generate tarined model named *dnn_classifier.pkl*
