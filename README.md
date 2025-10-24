@@ -26,3 +26,4 @@ $~~~~~~~~~~~~~~$   Covid19   $~~~~~~~~~~~~~~$   Normal  $~~~~~~~~~~~~~~$   Pneum
 
 
 Some Required Files = [Google Drive Link](https://drive.google.com/drive/folders/1BbfmUoDlft2BvakvLJ5ndcyxdFIJBOtK?usp=sharing)
+(Those files are not avail to upload in github due to 25mb file size limit)
