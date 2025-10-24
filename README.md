@@ -12,15 +12,15 @@
    <br>
 $~~~~~~~~~~~~~~$   Covid19   $~~~~~~~~~~~~~~$   Normal  $~~~~~~~~~~~~~~$   Pneumonia  $~~~~~~~~~~~~~~$  Tuberculosis
    <br>
-3. Convert all images into same extension (jpg).
+2. Convert all images into same extension (jpg).
    <br>
-4. feature extraction using DenseNet saved in *save_features.csv*.
+3. feature extraction using DenseNet saved in *save_features.csv*.
    <br>
-5. apply Dense Neural Network (DNN) classifier and generate tarined model named *dnn_classifier.pkl*
+4. apply Dense Neural Network (DNN) classifier and generate tarined model named *dnn_classifier.pkl*
    <br>
-6. Developed Flask API to host the model and process image uploads from the frontend.
+5. Developed Flask API to host the model and process image uploads from the frontend.
    <br>
-7. Developed Flutter application.
+6. Developed Flutter application.
 
 
 Some Required Files = [Google Drive Link](https://drive.google.com/drive/folders/1BbfmUoDlft2BvakvLJ5ndcyxdFIJBOtK?usp=sharing)
