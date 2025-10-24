@@ -3,12 +3,12 @@
 
 1. Findout dataset of xray and save in dataset folder.
    <br>
-    <center> 
-    <img src="sample/cov.jpg" alt="placeholder" width="70" height="70"> 
-    <img src="sample/nor.jpeg" alt="placeholder" width="70" height="70"> 
-    <img src="sample/pnu.jpeg" alt="placeholder" width="70" height="70"> 
-    <img src="sample/tub.png" alt="placeholder" width="70" height="70"> 
-    </center>
+   <center>
+       <img src="sample/cov.jpg" style="width:120px; height:120px; object-fit:cover;">
+       <img src="sample/nor.jpeg" style="width:120px; height:120px; object-fit:cover;">
+       <img src="sample/pnu.jpeg" style="width:120px; height:120px; object-fit:cover;">
+       <img src="sample/tub.png" style="width:120px; height:120px; object-fit:cover;">
+   </center>
 3. Convert all images into same extension (jpg).
 4. feature extraction using DenseNet saved in *save_features.csv*.
 5. apply Dense Neural Network (DNN) classifier and generate tarined model named *dnn_classifier.pkl*
