@@ -28,4 +28,4 @@ $~~~~~~~~~~~~~~$   Covid19   $~~~~~~~~~~~~~~$   Normal  $~~~~~~~~~~~~~~$   Pneum
 Some Required Files = [Google Drive Link](https://drive.google.com/drive/folders/1BbfmUoDlft2BvakvLJ5ndcyxdFIJBOtK?usp=sharing)
 (Those files are not avail to upload in github due to 25mb file size limit)
 <br>
-[Synopsis Link](docs.google.com/document/d/18XfKxOg3DjI4eGJylRlYDwl0LCKnNFPAOzQR8jQtn5g/edit?tab=t.0)
+Synopsis = [Synopsis Link](docs.google.com/document/d/18XfKxOg3DjI4eGJylRlYDwl0LCKnNFPAOzQR8jQtn5g/edit?tab=t.0)
