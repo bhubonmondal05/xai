@@ -4,9 +4,9 @@
 1. Findout dataset of xray and save in dataset folder.
     <center> 
     <img src="sample/cov.jpg" alt="placeholder" width="50" height="50"> 
-    <img src="sample/nor.jpg" alt="placeholder" width="50" height="50"> 
-    <img src="sample/pnu.jpg" alt="placeholder" width="50" height="50"> 
-    <img src="sample/tub.jpg" alt="placeholder" width="50" height="50"> 
+    <img src="sample/nor.jpeg" alt="placeholder" width="50" height="50"> 
+    <img src="sample/pnu.jpeg" alt="placeholder" width="50" height="50"> 
+    <img src="sample/tub.png" alt="placeholder" width="50" height="50"> 
     </center>
 2. Convert all images into same extension (jpg).
 3. feature extraction using DenseNet saved in *save_features.csv*.
