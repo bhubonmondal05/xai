@@ -1,4 +1,4 @@
-# <center>Read Me</center>
+# <center>Explainable AI for Chest X-Ray Analysis</center>
 #### This is the history to track our progress.
 
 1. Findout dataset of xray and save in dataset folder.
