@@ -14,6 +14,7 @@ $~~~~~~~~~~~~~~$   Covid19   $~~~~~~~~~~~~~~$   Normal  $~~~~~~~~~~~~~~$   Pneum
    <br>
 2. Convert all images into same extension (jpg).
    <br>
+   jpeg, png  --> jpg
 3. feature extraction using DenseNet saved in *save_features.csv*.
    <br>
 4. apply Dense Neural Network (DNN) classifier and generate tarined model named *dnn_classifier.pkl*
